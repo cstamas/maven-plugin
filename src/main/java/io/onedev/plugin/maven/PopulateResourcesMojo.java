@@ -76,6 +76,7 @@ public class PopulateResourcesMojo extends AbstractMojo {
 	@Component
 	private ArchiverManager archiverManager;
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void execute() throws MojoExecutionException {
     	if ("jar".equals(project.getPackaging())) {
